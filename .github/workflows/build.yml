@@ -90,8 +90,8 @@ jobs:
         if: matrix.os == 'macos-latest'
         run: |
           cd build/bin
-          zip -r "awd-teledrive-macos-universal.zip" "Awd TeleDrive.app"
-          rm -rf "Awd TeleDrive.app"
+          zip -r "awd-teledrive-macos-universal.zip" "ST TeleDrive.app"
+          rm -rf "ST TeleDrive.app"
         shell: bash
 
       - name: Upload Build Artifacts
