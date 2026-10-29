@@ -199,11 +199,11 @@ func compareVersions(v1, v2 string) int {
 
 func (a *App) CheckForUpdates() (VersionCheckResult, error) {
 	client := &http.Client{Timeout: 5 * time.Second}
-	req, err := http.NewRequest("GET", "https://api.github.com/repos/putuwahyu29/awd-teledrive-desktop/releases/latest", nil)
+	req, err := http.NewRequest("GET", "https://api.github.com/repos/thisisriyad688007/st-teledrive-desktop/releases/latest", nil)
 	if err != nil {
 		return VersionCheckResult{}, err
 	}
-	req.Header.Set("User-Agent", "awd-teledrive-desktop-updater")
+	req.Header.Set("User-Agent", "st-teledrive-desktop-updater")
 
 	resp, err := client.Do(req)
 	if err != nil {

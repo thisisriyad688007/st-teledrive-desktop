@@ -1,11 +1,11 @@
-# Awd TeleDrive Desktop 💻☁️🚀
+# ST TeleDrive Desktop 💻☁️🚀
 
 <p align="center">
-  <img src="logo-drive.png" width="130" height="130" alt="Logo Awd TeleDrive Desktop" onerror="this.src='icon.webp'">
+  <img src="logo-drive.png" width="130" height="130" alt="Logo ST TeleDrive Desktop" onerror="this.src='icon.webp'">
 </p>
 
 <p align="center">
-  <a href="https://github.com/putuwahyu29/awd-teledrive-desktop/blob/main/LICENSE">
+  <a href="https://github.com/thisisriyad688007/st-teledrive-desktop/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/Lisensi-MIT-yellow.svg?style=flat-square" alt="Badge Lisensi">
   </a>
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square" alt="Badge Platform">
@@ -14,15 +14,15 @@
   <img src="https://img.shields.io/badge/Framework-Wails%20v2-red?style=flat-square&logo=wails&logoColor=white" alt="Badge Wails">
 </p>
 
-**Awd TeleDrive Desktop** adalah aplikasi desktop lintas platform berkinerja tinggi yang kaya fitur untuk mengubah akun Telegram Anda menjadi penyimpanan cloud pribadi tak terbatas yang aman. Dibangun dengan framework modern **Wails (Go)** dan **React/Vite (TypeScript)**, awd-teledrive-desktop menyajikan antarmuka desktop native yang menawan serta alur sinkronisasi media dan penanganan berkas latar belakang yang canggih.
+**ST TeleDrive Desktop** adalah aplikasi desktop lintas platform berkinerja tinggi yang kaya fitur untuk mengubah akun Telegram Anda menjadi penyimpanan cloud pribadi tak terbatas yang aman. Dibangun dengan framework modern **Wails (Go)** dan **React/Vite (TypeScript)**, st-teledrive-desktop menyajikan antarmuka desktop native yang menawan serta alur sinkronisasi media dan penanganan berkas latar belakang yang canggih.
 
 ---
 
 ## 🌐 Ekosistem Teledrive
 Aplikasi ini merupakan bagian dari ekosistem lintas platform yang dirancang untuk menjadikan Telegram sebagai penyimpanan cloud pribadi Anda:
-*   **📱 [Awd TeleDrive Android](https://github.com/putuwahyu29/awd-teledrive-android)**: Manajer file dan alat pencadangan Android yang aman.
-*   **💻 [Awd TeleDrive Desktop](https://github.com/putuwahyu29/awd-teledrive-desktop)**: Klien desktop Wails (Go) + React berkinerja tinggi dengan sinkronisasi dua arah, dekripsi lokal, dan Berbagi Web via Cloudflare.
-*   **📸 [Awd TelePhoto Android](https://github.com/putuwahyu29/awd-telephoto-android)**: Aplikasi pendamping untuk pencadangan foto/video terenkripsi di sisi klien.
+*   **📱 [ST TeleDrive Android](https://github.com/thisisriyad688007/st-teledrive-android)**: Manajer file dan alat pencadangan Android yang aman.
+*   **💻 [ST TeleDrive Desktop](https://github.com/thisisriyad688007/st-teledrive-desktop)**: Klien desktop Wails (Go) + React berkinerja tinggi dengan sinkronisasi dua arah, dekripsi lokal, dan Berbagi Web via Cloudflare.
+*   **📸 [ST TelePhoto Android](https://github.com/thisisriyad688007/awd-telephoto-android)**: Aplikasi pendamping untuk pencadangan foto/video terenkripsi di sisi klien.
 
 ---
 
@@ -87,7 +87,7 @@ Aplikasi ini merupakan bagian dari ekosistem lintas platform yang dirancang untu
 
 ## 📊 Matriks Perbandingan Fitur
 
-| Fitur | 📱 Awd TeleDrive Android | 💻 Awd TeleDrive Desktop | 📸 Awd TelePhoto Android |
+| Fitur | 📱 ST TeleDrive Android | 💻 ST TeleDrive Desktop | 📸 ST TelePhoto Android |
 | :--- | :---: | :---: | :---: |
 | **Penyimpanan Cloud Tanpa Batas** | Ya (Hingga 2GB per file) | Ya (Ukuran file tidak terbatas) | Ya (Foto & Video) |
 | **Manajer File & Folder** | Ya | Ya | Tampilan Galeri saja |
@@ -117,12 +117,12 @@ Semua file konfigurasi, data sesi, dan cache media disimpan secara lokal pada di
 Untuk menggunakan aplikasi desktop yang telah di-build, cukup klik ganda file executable `teledrive.exe`. Tidak diperlukan instalasi driver tambahan.
 
 ### Cara Mendapatkan Kredensial API Telegram
-Awd TeleDrive Desktop membutuhkan API ID & API Hash Anda sendiri untuk terhubung ke server Telegram secara aman. Ikuti langkah mudah berikut (gratis, ~2 menit):
+ST TeleDrive Desktop membutuhkan API ID & API Hash Anda sendiri untuk terhubung ke server Telegram secara aman. Ikuti langkah mudah berikut (gratis, ~2 menit):
 1. Buka situs [my.telegram.org](https://my.telegram.org/) dan masuk menggunakan nomor Telegram Anda.
 2. Pilih menu **API development tools**.
 3. Isi formulir pembuatan aplikasi baru (Judul dan nama singkat bebas sesuai keinginan).
 4. Salin nilai **App api_id** dan **App api_hash**.
-5. Masukkan nilai tersebut pada tab Pengaturan (Settings) di aplikasi Awd TeleDrive Desktop.
+5. Masukkan nilai tersebut pada tab Pengaturan (Settings) di aplikasi ST TeleDrive Desktop.
 
 > [!NOTE]
 > Informasi kredensial API ini disimpan sepenuhnya di PC lokal Anda. Aplikasi ini berkomunikasi langsung ke server resmi Telegram (`dcs.Prod()`) tanpa perantara pihak ketiga.
@@ -162,7 +162,7 @@ Jika Anda menggunakan pencadangan terenkripsi dari perangkat seluler atau backup
 
 ### Struktur Direktori Proyek
 ```
-awd-teledrive-desktop/
+st-teledrive-desktop/
 ├── app.go                  # Logika aplikasi Wails utama dan binding lifecycle
 ├── app_auth.go             # Alur autentikasi Telegram (gotd: Telepon, OTP, 2FA, QR Login)
 ├── app_config.go           # Konfigurasi aplikasi lokal & pengaturan startup registri Windows
@@ -197,12 +197,12 @@ Untuk menjalankan proyek secara lokal dengan fitur hot-reload otomatis:
    ```
 
 ### Melakukan Build Produksi
-awd-teledrive-desktop mendukung lintas platform secara penuh dan dapat dikompilasi menjadi file binary yang dioptimalkan atau paket instalasi untuk Windows, macOS, dan Linux.
+st-teledrive-desktop mendukung lintas platform secara penuh dan dapat dikompilasi menjadi file binary yang dioptimalkan atau paket instalasi untuk Windows, macOS, dan Linux.
 
 #### 1. File Hasil Kompilasi
-*   **Windows**: `build/bin/awd-teledrive.exe`
-*   **macOS**: `build/bin/awd-teledrive.app` (App Bundle)
-*   **Linux**: `build/bin/awd-teledrive`
+*   **Windows**: `build/bin/st-teledrive.exe`
+*   **macOS**: `build/bin/st-teledrive.app` (App Bundle)
+*   **Linux**: `build/bin/st-teledrive`
 
 #### 2. Kompilasi Produksi
 Kompilasi biner produksi untuk OS saat ini:
@@ -228,7 +228,7 @@ wails build -platform linux/amd64
     ```bash
     wails build -nsis
     ```
-    Perintah ini menghasilkan sebuah setup installer executable tunggal `build/bin/awd-teledrive-setup.exe`.
+    Perintah ini menghasilkan sebuah setup installer executable tunggal `build/bin/st-teledrive-setup.exe`.
 
 ---
 
@@ -254,4 +254,4 @@ Proyek ini dilisensikan di bawah MIT License. Lihat berkas [LICENSE](LICENSE) un
 
 ---
 
-<p align="center">Dibuat dengan ❤️ oleh <a href="mailto:aguswahyu@office.awd.my.id">I Putu Agus Wahyu Dupayana</a></p>
+<p align="center">Dibuat dengan ❤️ oleh <a href="mailto:aguswahyu@office.awd.my.id">Swap Tech</a></p>

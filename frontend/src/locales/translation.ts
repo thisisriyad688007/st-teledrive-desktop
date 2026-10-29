@@ -7,7 +7,7 @@ export const FileManagerTranslations = {
     myDrive: 'My Drive',
     starred: 'Starred',
     media: 'Media',
-    search: 'Search in Awd TeleDrive',
+    search: 'Search in ST TeleDrive',
     new: 'New',
     uploadFile: 'Upload file',
     newFolder: 'New folder',
@@ -135,7 +135,7 @@ export const FileManagerTranslations = {
     stopBackupBtn: 'Stop Backup',
     startAutoBackupBtn: 'Start Auto Backup',
     quitAppTitle: 'Quit application',
-    quitAppMsg: 'Are you sure you want to quit Awd TeleDrive?',
+    quitAppMsg: 'Are you sure you want to quit ST TeleDrive?',
     quitAppBtn: 'Quit Application',
     uploadingToast: 'Uploading…',
     uploadCompleteToast: 'Upload complete ✓',
@@ -149,7 +149,7 @@ export const FileManagerTranslations = {
     myDrive: 'Drive Saya',
     starred: 'Berbintang',
     media: 'Media',
-    search: 'Cari di Awd TeleDrive',
+    search: 'Cari di ST TeleDrive',
     new: 'Baru',
     uploadFile: 'Unggah file',
     newFolder: 'Folder baru',
@@ -277,7 +277,7 @@ export const FileManagerTranslations = {
     stopBackupBtn: 'Hentikan Backup',
     startAutoBackupBtn: 'Mulai Backup Otomatis',
     quitAppTitle: 'Keluar dari aplikasi',
-    quitAppMsg: 'Yakin ingin menutup Awd TeleDrive?',
+    quitAppMsg: 'Yakin ingin menutup ST TeleDrive?',
     quitAppBtn: 'Keluar Aplikasi',
     uploadingToast: 'Mengunggah…',
     uploadCompleteToast: 'Unggahan selesai ✓',
@@ -289,7 +289,7 @@ export const FileManagerTranslations = {
 
 export const LoginTranslations = {
   id: {
-    appTitle: "Awd TeleDrive",
+    appTitle: "ST TeleDrive",
     appDesc: "Penyimpanan cloud tak terbatas menggunakan akun Telegram Anda sendiri.",
     feature1: "Tanpa batas penyimpanan — Telegram adalah cloud Anda",
     feature2: "Terenkripsi end-to-end via Telegram",
@@ -335,7 +335,7 @@ export const LoginTranslations = {
     importBackupConfirmMsg: 'Memulihkan cadangan metadata akan memperbarui struktur folder dan pemetaan berkas. Lanjutkan?',
   },
   en: {
-    appTitle: "Awd TeleDrive",
+    appTitle: "ST TeleDrive",
     appDesc: "Unlimited cloud storage using your own Telegram account.",
     feature1: "No storage limits — Telegram is your cloud",
     feature2: "End-to-end encrypted via Telegram",

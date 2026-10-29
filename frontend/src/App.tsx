@@ -100,7 +100,7 @@ function App() {
           <img
             src="/logo-drive.png"
             onError={(e) => { (e.target as HTMLImageElement).src = '/icon.webp'; }}
-            alt="Awd TeleDrive" style={{ width:64, height:64, objectFit:'contain', borderRadius:12 }}
+            alt="ST TeleDrive" style={{ width:64, height:64, objectFit:'contain', borderRadius:12 }}
           />
           <div style={{
             width:36, height:36, borderRadius:'50%',
@@ -163,7 +163,7 @@ function App() {
               Konfirmasi Tutup
             </h3>
             <p style={{ fontSize: '14px', lineHeight: '1.5', color: 'var(--on-surface-variant, #49454f)', marginBottom: '24px', marginTop: 0 }}>
-              Apakah Anda yakin ingin menutup aplikasi Awd TeleDrive?
+              Apakah Anda yakin ingin menutup aplikasi ST TeleDrive?
             </p>
             <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '8px' }}>
               <button 

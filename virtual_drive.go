@@ -314,7 +314,7 @@ func serveLoginPageHTML(w http.ResponseWriter, r *http.Request, errMsg string) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Awd TeleDrive - Login Akses Wi-Fi</title>
+<title>ST TeleDrive - Login Akses Wi-Fi</title>
 <style>
   :root {
     --bg-body: #0f172a;
@@ -358,9 +358,9 @@ func serveLoginPageHTML(w http.ResponseWriter, r *http.Request, errMsg string) {
 <div class="card">
   <button type="button" class="theme-toggle-top" id="themeBtnTop" onclick="toggleTheme()" title="Ganti Tema"></button>
   <div class="brand-logo">
-    <img src="/logo-drive.png" alt="Awd TeleDrive Logo" onerror="this.onerror=null; this.src='/icon.webp';" />
+    <img src="/logo-drive.png" alt="ST TeleDrive Logo" onerror="this.onerror=null; this.src='/icon.webp';" />
   </div>
-  <h2>Awd TeleDrive Wi-Fi</h2>
+  <h2>ST TeleDrive Wi-Fi</h2>
   <p>Masukkan Password / PIN Akses Wi-Fi untuk membuka berkas cloud Telegram Anda pada HP atau Smart TV ini.</p>
   %s
   <form method="POST" action="/__login">
@@ -423,7 +423,7 @@ func serveWebExplorerHTML(w http.ResponseWriter, r *http.Request, vdiskDir strin
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Awd TeleDrive - Cloud Web Explorer</title>
+<title>ST TeleDrive - Cloud Web Explorer</title>
 <style>
   :root {
     --bg-body: #0f172a;
@@ -503,9 +503,9 @@ func serveWebExplorerHTML(w http.ResponseWriter, r *http.Request, vdiskDir strin
   <div class="header">
     <div class="header-top">
       <div class="brand">
-        <img src="/logo-drive.png" alt="Awd TeleDrive Logo" onerror="this.onerror=null; this.src='/icon.webp';" />
+        <img src="/logo-drive.png" alt="ST TeleDrive Logo" onerror="this.onerror=null; this.src='/icon.webp';" />
         <div>
-          <h1 class="title">Awd TeleDrive</h1>
+          <h1 class="title">ST TeleDrive</h1>
           <p class="subtitle">Cloud Web Explorer</p>
         </div>
       </div>
@@ -718,7 +718,7 @@ func (a *App) StartNativeWebDAVServer(port int, password string) (string, error)
 					serveLoginPageHTML(w, r, "")
 					return
 				}
-				w.Header().Set("WWW-Authenticate", `Basic realm="Awd TeleDrive Wi-Fi Access"`)
+				w.Header().Set("WWW-Authenticate", `Basic realm="ST TeleDrive Wi-Fi Access"`)
 				http.Error(w, "Unauthorized", http.StatusUnauthorized)
 				return
 			}
@@ -891,7 +891,7 @@ func (a *App) MountVirtualDrive(chatId string, driveLetter string) (MountedDrive
 		return MountedDriveInfo{}, fmt.Errorf("could not start native WebDAV engine: %v", err)
 	}
 
-	targetName := "Awd TeleDrive Cloud"
+	targetName := "ST TeleDrive Cloud"
 	mountID := fmt.Sprintf("vdrive-%d", time.Now().UnixNano())
 	localhostURL := fmt.Sprintf("http://127.0.0.1:%d/", a.virtualDriveMgr.webdavPort)
 	cleanURL := fmt.Sprintf("http://127.0.0.1:%d", a.virtualDriveMgr.webdavPort)

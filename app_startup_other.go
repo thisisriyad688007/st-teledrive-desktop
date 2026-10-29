@@ -40,12 +40,12 @@ func getStartupConfig() (dirPath string, filePath string, content string, err er
 	} else {
 		// Linux
 		dirPath = filepath.Join(homeDir, ".config", "autostart")
-		filePath = filepath.Join(dirPath, "AwdTeleDrive.desktop")
+		filePath = filepath.Join(dirPath, "STTeleDrive.desktop")
 		content = fmt.Sprintf(`[Desktop Entry]
 Type=Application
 Version=1.0
-Name=Awd TeleDrive
-Comment=Awd TeleDrive Desktop Application
+Name=ST TeleDrive
+Comment=ST TeleDrive Desktop Application
 Exec="%s"
 StartupNotify=false
 Terminal=false`, exePath)

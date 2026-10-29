@@ -1,4 +1,4 @@
-// Polyfill & Bridge for running Awd TeleDrive in Web Browsers / Headless Web Server mode
+// Polyfill & Bridge for running ST TeleDrive in Web Browsers / Headless Web Server mode
 window.isWebMode = !window.runtime;
 
 if (!window['go']) {
@@ -27,7 +27,7 @@ if (!window['go']) {
               });
 
               if (res.status === 401) {
-                const userKey = prompt('🔒 Awd TeleDrive Server dilindungi kunci keamanan.\n\nMasukkan API Key / Password server Anda:');
+                const userKey = prompt('🔒 ST TeleDrive Server dilindungi kunci keamanan.\n\nMasukkan API Key / Password server Anda:');
                 if (userKey) {
                   localStorage.setItem('api_key', userKey.trim());
                   // Retry request with newly saved API key

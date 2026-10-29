@@ -40,7 +40,7 @@ func (ws *WebServer) servePasswordPage(w http.ResponseWriter, name string, id st
 <!DOCTYPE html>
 <html>
 <head>
-    <title id="page-title">Sandi Proteksi - Awd TeleDrive</title>
+    <title id="page-title">Sandi Proteksi - ST TeleDrive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/webp" href="/icon.webp">
@@ -129,7 +129,7 @@ func (ws *WebServer) servePasswordPage(w http.ResponseWriter, name string, id st
         </div>
         <div class="brand">
             <img src="/icon.webp" width="32" height="32" style="border-radius: 6px; object-fit: contain; vertical-align: middle;" />
-            <span>Awd TeleDrive</span>
+            <span>ST TeleDrive</span>
         </div>
         <h2 id="form-title">Tautan Terproteksi</h2>
         <p class="desc" id="form-desc">Masukkan kata sandi untuk mengakses:<br><b style="color: var(--on-surface);">%s</b></p>
@@ -173,7 +173,7 @@ func (ws *WebServer) servePasswordPage(w http.ResponseWriter, name string, id st
         // Translations
         const translations = {
             id: {
-                title: "Sandi Proteksi - Awd TeleDrive",
+                title: "Sandi Proteksi - ST TeleDrive",
                 formTitle: "Tautan Terproteksi",
                 formDesc: "Masukkan kata sandi untuk mengakses:<br><b style='color: var(--on-surface);'>%%s</b>",
                 placeholder: "Masukkan kata sandi",
@@ -182,7 +182,7 @@ func (ws *WebServer) servePasswordPage(w http.ResponseWriter, name string, id st
                 langBtn: "ID"
             },
             en: {
-                title: "Password Protection - Awd TeleDrive",
+                title: "Password Protection - ST TeleDrive",
                 formTitle: "Protected Link",
                 formDesc: "Enter password to access:<br><b style='color: var(--on-surface);'>%%s</b>",
                 placeholder: "Enter password",
@@ -428,7 +428,7 @@ func (ws *WebServer) serveFilePage(w http.ResponseWriter, item *WebShareItem) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>%s — Awd TeleDrive Preview</title>
+    <title>%s — ST TeleDrive Preview</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/webp" href="/icon.webp">
@@ -593,7 +593,7 @@ func (ws *WebServer) serveFolderPage(w http.ResponseWriter, item *WebShareItem) 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>%s — Awd TeleDrive</title>
+    <title>%s — ST TeleDrive</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/webp" href="/icon.webp">
@@ -788,7 +788,7 @@ func (ws *WebServer) serveFolderPage(w http.ResponseWriter, item *WebShareItem) 
     <header>
         <a href="#" class="brand">
             <img src="/icon.webp" width="26" height="26" style="border-radius: 6px; object-fit: contain; margin-right: 8px; vertical-align: middle;" />
-            <span class="logo-text">Awd TeleDrive</span>
+            <span class="logo-text">ST TeleDrive</span>
         </a>
         <div class="header-actions">
             <button id="toggle-lang-btn" class="icon-btn" title="Ganti Bahasa" style="font-size: 13px; font-weight: 600;">ID</button>
@@ -1015,7 +1015,7 @@ func (ws *WebServer) serveFolderPage(w http.ResponseWriter, item *WebShareItem) 
         const folderTranslations = {
             id: {
                 langBtn: "ID",
-                title: "%%s — Awd TeleDrive",
+                title: "%%s — ST TeleDrive",
                 downloadSelected: "Unduh Terpilih",
                 downloadAll: "Unduh Semua",
                 thName: "Nama",
@@ -1028,7 +1028,7 @@ func (ws *WebServer) serveFolderPage(w http.ResponseWriter, item *WebShareItem) 
             },
             en: {
                 langBtn: "EN",
-                title: "%%s — Awd TeleDrive",
+                title: "%%s — ST TeleDrive",
                 downloadSelected: "Download Selected",
                 downloadAll: "Download All",
                 thName: "Name",

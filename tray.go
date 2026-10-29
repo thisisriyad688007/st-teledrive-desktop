@@ -163,7 +163,7 @@ func (a *App) startTray() {
 
 func (a *App) runTrayLoop() {
 	hInst, _, _ := procGetModuleHandleW.Call(0)
-	className, _ := syscall.UTF16PtrFromString("AwdTeleDriveTray")
+	className, _ := syscall.UTF16PtrFromString("STTeleDriveTray")
 
 	wndProc := syscall.NewCallback(func(hwnd windows.HWND, msg uint32, wParam, lParam uintptr) uintptr {
 		switch msg {
@@ -208,7 +208,7 @@ func (a *App) runTrayLoop() {
 	wc.CbSize = uint32(unsafe.Sizeof(wc))
 	procRegisterClassExW.Call(uintptr(unsafe.Pointer(&wc)))
 
-	titlePtr, _ := syscall.UTF16PtrFromString("AwdTeleDriveTrayWindow")
+	titlePtr, _ := syscall.UTF16PtrFromString("STTeleDriveTrayWindow")
 	hwndRaw, _, _ := procCreateWindowExW.Call(
 		0, uintptr(unsafe.Pointer(className)),
 		uintptr(unsafe.Pointer(titlePtr)),
@@ -228,7 +228,7 @@ func (a *App) runTrayLoop() {
 	}
 
 	// Build the NOTIFYICONDATA
-	tip, _ := syscall.UTF16FromString("Awd TeleDrive")
+	tip, _ := syscall.UTF16FromString("ST TeleDrive")
 	trayNID = NOTIFYICONDATA{
 		HWnd:             hwnd,
 		UID:              1,
@@ -260,7 +260,7 @@ func (a *App) showTrayMenu(hwnd windows.HWND) {
 	procGetCursorPos.Call(uintptr(unsafe.Pointer(&pt)))
 
 	hMenu, _, _ := procCreatePopupMenu.Call()
-	openStr, _ := syscall.UTF16PtrFromString("Buka Awd TeleDrive")
+	openStr, _ := syscall.UTF16PtrFromString("Buka ST TeleDrive")
 	aboutStr, _ := syscall.UTF16PtrFromString("Tentang & Pembaruan")
 	checkStr, _ := syscall.UTF16PtrFromString("Periksa Pembaruan")
 	quitStr, _ := syscall.UTF16PtrFromString("Keluar")

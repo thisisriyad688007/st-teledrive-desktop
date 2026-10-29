@@ -1,11 +1,11 @@
-# Awd TeleDrive Desktop 💻☁️🚀
+# ST TeleDrive Desktop 💻☁️🚀
 
 <p align="center">
-  <img src="logo-drive.png" width="130" height="130" alt="Awd TeleDrive Desktop Logo" onerror="this.src='icon.webp'">
+  <img src="logo-drive.png" width="130" height="130" alt="ST TeleDrive Desktop Logo" onerror="this.src='icon.webp'">
 </p>
 
 <p align="center">
-  <a href="https://github.com/putuwahyu29/awd-teledrive-desktop/blob/main/LICENSE">
+  <a href="https://github.com/thisisriyad688007/st-teledrive-desktop/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License Badge">
   </a>
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square" alt="Platform Badge">
@@ -14,15 +14,15 @@
   <img src="https://img.shields.io/badge/Framework-Wails%20v2-red?style=flat-square&logo=wails&logoColor=white" alt="Wails Badge">
 </p>
 
-**Awd TeleDrive Desktop** is a feature-rich, high-performance cross-platform desktop application that turns your Telegram account into an unlimited, secure personal cloud storage drive. Built with the state-of-the-art **Wails (Go)** framework and **React/Vite (TypeScript)**, it provides a native desktop experience with modern aesthetics, advanced media handling, and background synchronization workflows.
+**ST TeleDrive Desktop** is a feature-rich, high-performance cross-platform desktop application that turns your Telegram account into an unlimited, secure personal cloud storage drive. Built with the state-of-the-art **Wails (Go)** framework and **React/Vite (TypeScript)**, it provides a native desktop experience with modern aesthetics, advanced media handling, and background synchronization workflows.
 
 ---
 
 ## 🌐 Teledrive Ecosystem
 This application is part of a cross-platform ecosystem designed to turn Telegram into your personal unlimited cloud storage:
-*   **📱 [Awd TeleDrive Android](https://github.com/putuwahyu29/awd-teledrive-android)**: Secure Android file manager and backup tool.
-*   **💻 [Awd TeleDrive Desktop](https://github.com/putuwahyu29/awd-teledrive-desktop)**: High-performance Wails (Go) + React desktop client with two-way sync, local decryption, and Cloudflare Web Sharing.
-*   **📸 [Awd TelePhoto Android](https://github.com/putuwahyu29/awd-telephoto-android)**: Companion app for client-side encrypted photo/video backup.
+*   **📱 [ST TeleDrive Android](https://github.com/thisisriyad688007/st-teledrive-android)**: Secure Android file manager and backup tool.
+*   **💻 [ST TeleDrive Desktop](https://github.com/thisisriyad688007/st-teledrive-desktop)**: High-performance Wails (Go) + React desktop client with two-way sync, local decryption, and Cloudflare Web Sharing.
+*   **📸 [ST TelePhoto Android](https://github.com/thisisriyad688007/awd-telephoto-android)**: Companion app for client-side encrypted photo/video backup.
 
 ---
 
@@ -87,7 +87,7 @@ This application is part of a cross-platform ecosystem designed to turn Telegram
 
 ## 📊 Feature Comparison Matrix
 
-| Feature | 📱 Awd TeleDrive Android | 💻 Awd TeleDrive Desktop | 📸 Awd TelePhoto Android |
+| Feature | 📱 ST TeleDrive Android | 💻 ST TeleDrive Desktop | 📸 ST TelePhoto Android |
 | :--- | :---: | :---: | :---: |
 | **Unlimited Cloud Storage** | Yes (Up to 2GB per file) | Yes (Any file size) | Yes (Photos & Videos) |
 | **File & Folder Manager** | Yes | Yes | Gallery View only |
@@ -117,7 +117,7 @@ All configuration files, cached data, and session keys are securely stored local
 To run the pre-built desktop application, simply double-click the `teledrive.exe` executable. No additional drivers are needed.
 
 ### How to Obtain Telegram API Credentials
-Awd TeleDrive Desktop requires your own API credentials to connect with Telegram's servers. This is free and takes less than 2 minutes:
+ST TeleDrive Desktop requires your own API credentials to connect with Telegram's servers. This is free and takes less than 2 minutes:
 1. Go to [my.telegram.org](https://my.telegram.org/) and log in with your phone number.
 2. Select **API development tools**.
 3. Fill in the form (App title and short name of your choice).
@@ -162,7 +162,7 @@ If you use encrypted mobile or cloud backups:
 
 ### Project Directory Structure
 ```
-awd-teledrive-desktop/
+st-teledrive-desktop/
 ├── app.go                  # Main Wails application logic and lifecycle bindings
 ├── app_auth.go             # Telegram authentication flow (gotd: Phone, OTP, 2FA, QR Login)
 ├── app_config.go           # Application configuration persistence & Windows registry startup
@@ -197,12 +197,12 @@ To run the project locally with live-reloading:
    ```
 
 ### Building for Production
-awd-teledrive-desktop is fully cross-platform and can be compiled into optimized binaries or installation packages for Windows, macOS, and Linux.
+st-teledrive-desktop is fully cross-platform and can be compiled into optimized binaries or installation packages for Windows, macOS, and Linux.
 
 #### 1. Mapped Output Binaries
-*   **Windows**: `build/bin/awd-teledrive.exe`
-*   **macOS**: `build/bin/awd-teledrive.app` (App Bundle)
-*   **Linux**: `build/bin/awd-teledrive`
+*   **Windows**: `build/bin/st-teledrive.exe`
+*   **macOS**: `build/bin/st-teledrive.app` (App Bundle)
+*   **Linux**: `build/bin/st-teledrive`
 
 #### 2. Compiling for Production
 Compile optimized, clean production binaries for the current OS:
@@ -228,7 +228,7 @@ wails build -platform linux/amd64
     ```bash
     wails build -nsis
     ```
-    This generates a single setup installer executable `build/bin/awd-teledrive-setup.exe`.
+    This generates a single setup installer executable `build/bin/st-teledrive-setup.exe`.
 
 ---
 
@@ -254,4 +254,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-<p align="center">Made with ❤️ by <a href="mailto:aguswahyu@office.awd.my.id">I Putu Agus Wahyu Dupayana</a></p>
+<p align="center">Made with ❤️ by <a href="mailto:aguswahyu@office.awd.my.id">Swap Tech</a></p>

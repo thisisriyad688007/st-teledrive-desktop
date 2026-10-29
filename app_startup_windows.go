@@ -9,7 +9,7 @@ import (
 
 const (
 	startupRegKey  = `Software\Microsoft\Windows\CurrentVersion\Run`
-	startupAppName = "AwdTeleDrive"
+	startupAppName = "STTeleDrive"
 )
 
 func (a *App) SetStartup(enable bool) map[string]interface{} {

@@ -350,7 +350,7 @@ func (a *App) CreateSecureFolderGroup(groupName string, password string) map[str
 		Broadcast: false,
 		Megagroup: true,
 		Title:     name,
-		About:     "Awd TeleDrive - Secure Folder Group",
+		About:     "ST TeleDrive - Secure Folder Group",
 	})
 	if err != nil {
 		return map[string]interface{}{"success": false, "error": fmt.Sprintf("Gagal membuat grup privat di Telegram: %v", err)}

@@ -29,8 +29,8 @@ export default function ChangelogView({ lang }: ChangelogViewProps) {
   };
 
   const mitLicenseText = lang === 'id' 
-    ? `Hak Cipta © 2026 I Putu Agus Wahyu Dupayana\n\nIzin dengan ini diberikan, secara gratis, kepada siapa pun yang memperoleh salinan perangkat lunak ini dan file dokumentasi terkait ("Perangkat Lunak"), untuk menggunakan Perangkat Lunak tanpa batasan, termasuk tanpa batasan hak untuk menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, mensublisensikan, dan/atau menjual salinan Perangkat Lunak, dan mengizinkan orang yang menerima Perangkat Lunak untuk melakukannya, dengan tunduk pada ketentuan berikut:\n\nPemberitahuan hak cipta di atas dan pemberitahuan izin ini harus dicantumkan dalam semua salinan atau bagian substansial dari Perangkat Lunak.\n\nPERANGKAT LUNAK INI DISEDIAKAN "APA ADANYA", TANPA JAMINAN APA PUN, TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN KELAYAKAN JUAL, KESESUAIAN UNTUK TUJUAN TERTENTU DAN KETIADAAN PELANGGARAN. DALAM HAL APA PUN, PENULIS ATAU PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN ATAU KEWAJIBAN LAINNYA, BAIK DALAM TINDAKAN KONTRAK, PERBUATAN MELAWAN HUKUM ATAU LAINNYA, YANG TIMBUL DARI, DARI ATAU SEHUBUNGAN DENGAN PERANGKAT LUNAK ATAU PENGGUNAAN ATAU TRANSAKSI LAIN DALAM PERANGKAT LUNAK.`
-    : `Copyright © 2026 I Putu Agus Wahyu Dupayana\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`;
+    ? `Hak Cipta © 2026 Swap Tech\n\nIzin dengan ini diberikan, secara gratis, kepada siapa pun yang memperoleh salinan perangkat lunak ini dan file dokumentasi terkait ("Perangkat Lunak"), untuk menggunakan Perangkat Lunak tanpa batasan, termasuk tanpa batasan hak untuk menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, mensublisensikan, dan/atau menjual salinan Perangkat Lunak, dan mengizinkan orang yang menerima Perangkat Lunak untuk melakukannya, dengan tunduk pada ketentuan berikut:\n\nPemberitahuan hak cipta di atas dan pemberitahuan izin ini harus dicantumkan dalam semua salinan atau bagian substansial dari Perangkat Lunak.\n\nPERANGKAT LUNAK INI DISEDIAKAN "APA ADANYA", TANPA JAMINAN APA PUN, TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN KELAYAKAN JUAL, KESESUAIAN UNTUK TUJUAN TERTENTU DAN KETIADAAN PELANGGARAN. DALAM HAL APA PUN, PENULIS ATAU PEMEGANG HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN ATAU KEWAJIBAN LAINNYA, BAIK DALAM TINDAKAN KONTRAK, PERBUATAN MELAWAN HUKUM ATAU LAINNYA, YANG TIMBUL DARI, DARI ATAU SEHUBUNGAN DENGAN PERANGKAT LUNAK ATAU PENGGUNAAN ATAU TRANSAKSI LAIN DALAM PERANGKAT LUNAK.`
+    : `Copyright © 2026 Swap Tech\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`;
 
   return (
     <div style={{
@@ -43,9 +43,9 @@ export default function ChangelogView({ lang }: ChangelogViewProps) {
         borderRadius: 24, padding: 24, display: 'flex', alignItems: 'center', gap: 20,
         boxShadow: '0 1px 3px rgba(0,0,0,0.05)', flexWrap: 'wrap'
       }}>
-        <img src="/logo-drive.png" onError={(e) => { (e.target as HTMLImageElement).src = '/icon.webp'; }} alt="Awd TeleDrive" style={{ width: 80, height: 80, borderRadius: 16, objectFit: 'contain' }} />
+        <img src="/logo-drive.png" onError={(e) => { (e.target as HTMLImageElement).src = '/icon.webp'; }} alt="ST TeleDrive" style={{ width: 80, height: 80, borderRadius: 16, objectFit: 'contain' }} />
         <div style={{ flex: 1, minWidth: 200 }}>
-          <h3 style={{ margin: '0 0 4px 0', fontSize: 22, color: 'var(--md-on-surface)' }}>Awd TeleDrive</h3>
+          <h3 style={{ margin: '0 0 4px 0', fontSize: 22, color: 'var(--md-on-surface)' }}>ST TeleDrive</h3>
           <p style={{ margin: '0 0 8px 0', fontSize: 14, color: 'var(--md-on-surface-variant)' }}>
             {lang === 'id' 
               ? 'Aplikasi Desktop untuk memanfaatkan Telegram sebagai penyimpanan awan tanpa batas.' 
@@ -54,7 +54,7 @@ export default function ChangelogView({ lang }: ChangelogViewProps) {
           <div style={{ display: 'flex', gap: 12, alignItems: 'center', fontSize: 13, color: 'var(--md-on-surface-variant)' }}>
             <span>{lang === 'id' ? 'Versi saat ini: 1.3.0' : 'Current version: 1.3.0'}</span>
             <span style={{ height: 4, width: 4, borderRadius: '50%', background: 'var(--md-outline)' }}></span>
-            <span>© 2026 Awd TeleDrive</span>
+            <span>© 2026 ST TeleDrive</span>
           </div>
         </div>
         <div>
@@ -150,7 +150,7 @@ export default function ChangelogView({ lang }: ChangelogViewProps) {
           </h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             <div 
-              onClick={() => OpenReleaseURL('https://teledrive.biz.id')}
+              onClick={() => OpenReleaseURL('https://swaptechbd.com')}
               style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }}
             >
               <div style={{
@@ -164,12 +164,12 @@ export default function ChangelogView({ lang }: ChangelogViewProps) {
                 <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--md-on-surface)' }}>
                   {lang === 'id' ? 'Situs Resmi' : 'Official Website'}
                 </div>
-                <div style={{ fontSize: 12, color: 'var(--md-on-surface-variant)' }}>teledrive.biz.id</div>
+                <div style={{ fontSize: 12, color: 'var(--md-on-surface-variant)' }}>swaptechbd.com</div>
               </div>
             </div>
 
             <div 
-              onClick={() => OpenReleaseURL('https://github.com/putuwahyu29/awd-teledrive-desktop')}
+              onClick={() => OpenReleaseURL('https://github.com/thisisriyad688007/st-teledrive-desktop')}
               style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer' }}
             >
               <div style={{
@@ -183,7 +183,7 @@ export default function ChangelogView({ lang }: ChangelogViewProps) {
                 <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--md-on-surface)' }}>
                   {lang === 'id' ? 'GitHub & Masalah' : 'GitHub & Issues'}
                 </div>
-                <div style={{ fontSize: 12, color: 'var(--md-on-surface-variant)' }}>putuwahyu29/awd-teledrive-desktop</div>
+                <div style={{ fontSize: 12, color: 'var(--md-on-surface-variant)' }}>thisisriyad688007/st-teledrive-desktop</div>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default function ChangelogView({ lang }: ChangelogViewProps) {
                 <div style={{ fontSize: 14, fontWeight: 500, color: 'var(--md-on-surface)' }}>
                   {lang === 'id' ? 'Pembuat' : 'Creator'}
                 </div>
-                <div style={{ fontSize: 12, color: 'var(--md-on-surface-variant)' }}>I Putu Agus Wahyu Dupayana</div>
+                <div style={{ fontSize: 12, color: 'var(--md-on-surface-variant)' }}>Swap Tech</div>
               </div>
             </div>
 

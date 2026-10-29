@@ -93,7 +93,7 @@ func main() {
 	flag.Parse()
 
 	if *versionFlag {
-		fmt.Printf("Awd TeleDrive v%s (Dual-Mode: Desktop GUI & Headless Web Server)\n", AppVersion)
+		fmt.Printf("ST TeleDrive v%s (Dual-Mode: Desktop GUI & Headless Web Server)\n", AppVersion)
 		os.Exit(0)
 	}
 
@@ -130,7 +130,7 @@ func main() {
 	}
 
 	err := wails.Run(&options.App{
-		Title:            "Awd TeleDrive",
+		Title:            "ST TeleDrive",
 		Width:            1200,
 		Height:           800,
 		MinWidth:         900,

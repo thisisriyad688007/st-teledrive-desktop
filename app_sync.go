@@ -216,7 +216,7 @@ func (a *App) StartAutoBackup(folderPath string, destChatId string) map[string]i
 					})
 
 					if status == "success" {
-						a.ShowBalloonNotification("Awd TeleDrive", "Disinkronkan (Diunggah): "+fileName)
+						a.ShowBalloonNotification("ST TeleDrive", "Disinkronkan (Diunggah): "+fileName)
 					}
 
 					return nil
@@ -258,7 +258,7 @@ func (a *App) StartAutoBackup(folderPath string, destChatId string) map[string]i
 							"time":   time.Now().Unix(),
 						})
 						if err == nil {
-							a.ShowBalloonNotification("Awd TeleDrive", "Disinkronkan (Diunduh): "+name)
+							a.ShowBalloonNotification("ST TeleDrive", "Disinkronkan (Diunduh): "+name)
 						}
 					}
 				}

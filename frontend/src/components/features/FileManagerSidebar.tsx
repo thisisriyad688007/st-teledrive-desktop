@@ -58,10 +58,10 @@ export default function FileManagerSidebar({
           width: '100%'
         }}
       >
-        <img src="/logo-drive.png" onError={(e) => { (e.target as HTMLImageElement).src = '/icon.webp'; }} alt="Awd TeleDrive" style={{ width: 36, height: 36, objectFit: 'contain', borderRadius: 8 }}/>
+        <img src="/logo-drive.png" onError={(e) => { (e.target as HTMLImageElement).src = '/icon.webp'; }} alt="ST TeleDrive" style={{ width: 36, height: 36, objectFit: 'contain', borderRadius: 8 }}/>
         {!sidebarCollapsed && (
           <span style={{ fontFamily: 'Google Sans,sans-serif', fontSize: 18, fontWeight: 600, color: 'var(--md-on-surface)', whiteSpace: 'nowrap' }}>
-            Awd TeleDrive
+            ST TeleDrive
           </span>
         )}
       </div>

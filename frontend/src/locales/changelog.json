@@ -32,13 +32,13 @@
     },
     "changes": {
       "id": [
-        "Integrasi Tag Metadata Folder Virtual [VF:] yang 100% kompatibel dengan Awd TeleDrive Android.",
+        "Integrasi Tag Metadata Folder Virtual [VF:] yang 100% kompatibel dengan ST TeleDrive Android.",
         "Fitur Virtual Drive / WebDAV Mounting langsung ke File Explorer Windows (OS Drive Letter).",
         "Fitur Web Share Internal & Public Tunneling untuk berbagi file lokal maupun Telegram secara mudah.",
         "Peningkatan stabilitas render UI, perbaikan error JavaScript startup, dan optimasi performa."
       ],
       "en": [
-        "Full Virtual Folder [VF:] metadata tag integration 100% compatible with Awd TeleDrive Android.",
+        "Full Virtual Folder [VF:] metadata tag integration 100% compatible with ST TeleDrive Android.",
         "Virtual Drive / WebDAV Mounting support directly to Windows File Explorer (OS Drive Letter).",
         "Internal Web Share & Public Tunneling features to easily share local and Telegram files.",
         "Improved UI rendering stability, fixed startup JavaScript errors, and performance optimizations."
@@ -87,8 +87,8 @@
     "version": "1.0.0",
     "date": "2026-06-15",
     "title": {
-      "id": "Rilis Awal Awd TeleDrive",
-      "en": "Initial Release of Awd TeleDrive"
+      "id": "Rilis Awal ST TeleDrive",
+      "en": "Initial Release of ST TeleDrive"
     },
     "changes": {
       "id": [

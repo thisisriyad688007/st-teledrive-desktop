@@ -72,7 +72,7 @@ func (hs *HeadlessServer) Start() error {
 		w.Header().Set("Content-Type", "application/json")
 		_ = json.NewEncoder(w).Encode(map[string]interface{}{
 			"status":  "ok",
-			"app":     "Awd TeleDrive",
+			"app":     "ST TeleDrive",
 			"mode":    "headless",
 			"time":    time.Now().Unix(),
 			"version": AppVersion,
@@ -186,7 +186,7 @@ func (hs *HeadlessServer) Start() error {
 	}
 
 	log.Printf("==================================================")
-	log.Printf("  Awd TeleDrive Headless Web Server active!")
+	log.Printf("  ST TeleDrive Headless Web Server active!")
 	log.Printf("  Listening on: http://%s", addr)
 	if hs.apiKey != "" {
 		log.Printf("  API Key protection: ENABLED")
@@ -206,7 +206,7 @@ func (hs *HeadlessServer) Start() error {
 	}()
 
 	<-stop
-	log.Println("Shutting down Awd TeleDrive Headless Web Server...")
+	log.Println("Shutting down ST TeleDrive Headless Web Server...")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()

@@ -353,7 +353,7 @@ func (ws *WebServer) handleIndex(w http.ResponseWriter, r *http.Request) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Awd TeleDrive - Web Share</title>
+    <title>ST TeleDrive - Web Share</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/webp" href="/icon.webp">
@@ -419,9 +419,9 @@ func (ws *WebServer) handleIndex(w http.ResponseWriter, r *http.Request) {
         </button>
         <div class="brand">
             <img src="/icon.webp" width="32" height="32" style="border-radius: 6px; object-fit: contain; vertical-align: middle;" />
-            <span>Awd TeleDrive</span>
+            <span>ST TeleDrive</span>
         </div>
-        <h2 id="page-heading">Awd TeleDrive</h2>
+        <h2 id="page-heading">ST TeleDrive</h2>
         <p class="desc" id="page-desc">Gunakan tautan spesifik untuk mengakses berkas yang dibagikan.</p>
     </div>
     <script>
